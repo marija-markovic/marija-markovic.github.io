@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- MathJax -->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+				src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="logo/mm_logo.svg" alt="" /></span><span class="title">Marija Markovic</span>
+								</a>
+
+							<!-- Navigation -->
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>									
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="pubs.html">Publications</a></li>
+					</ul>
+				</nav>							
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h2>Research</h2>
+							<section>
+								<h4>Data-Driven Estimation for Low-Observable Distribution Systems</h4>
+								<p><span class="image right"><img src="images/distribution-catv-networks.png" alt="" /></span>Distribution systems are seen as a keystone of the modernization of electric power systems, as they integrate renewable sources and enable new services for consumers with distributed energy resources (DERs), such as solar photovoltaics and electric vehicles. Despite their importance, distribution systems lack observability (due to scarce metering devices and insufficient communications) and are therefore characterized by very limited decision-making and control, which is particularly important in the growing presence of DERs. Although several recent works have studied learning (e.g., supervised learning) and matrix completion methods applicable to low-observability conditions often present on distribution systems with the aim of increasing visibility into the conditions and state of these systems, the vast majority of available works rely on the strict assumption of full knowledge of the system model. Besides the theoretical value, reliable knowledge of the distribution system model (i.e., network parameters and topology), is rarely available in practice. To this end, we proposed data-driven methods (i.e., that do not require knowledge of the system model) to improve situational awareness at distribution (low-voltage) system levels. In a first line of research, we studied the benefits of the untapped sensing potential of cable television (CATV) networks in the context of increasing the observability of the local distribution grid. Our work developed a learning framework based on random forests to infer voltages at otherwise unobservable grid nodes from measurements of adjacent CATV sensors. In a second line of research, we studied the matrix completion problem using the proposed parameter-less singular value shrinking technique. Here, we formalized the voltage estimation task as a matrix completion problem by exploiting sparsity in distribution grid measurements to recover unknown voltages without explicit consideration of the physical network model. </p>
+								<p>This work was done as part of the <a href="https://www.cablelabs.com/blog/case-for-gridmetrics-saga-grid-cybersecurity" target="_blank">Situational Awareness of Grid Anomalies (SAGA)</a> project, a collaborative project between NREL and CableLabs, sponsored by the Department of Energy’s (DOE’s) Office of Cybersecurity, Energy Security and Emergency Response (CESER).</p>
+							</section>
+							<section>
+								<h4>Learning-Aided Linearization of Distribution Power Flow</h4>
+								<p><span class="image right"><img src="images/plpf-sdistflow-comparison.png" alt="" /></span>The linear power flow (LPF) model most commonly used for distribution system analysis in the relevant literature – Baran and Wu's celebrated <a href="https://ieeexplore.ieee.org/abstract/document/19266" target="_blank"><i>Simplified DistFlow</i> model</a> – is known to have fairly decent accuracy in lightly loaded networks, but its performance degrades as the load deviates from the corresponding operating point. In these cases, the <i>Simplified DistFlow</i> model provides voltage solutions that may deviate significantly from the voltage solutions obtained by the exact non-linear model. This work considers a parameterization using Gaussian Process regression to obtain a LPF formulation for radial distribution systems (coined as a <em>Parameterized LPF</em> model) that allows more accurate voltage solutions over a wider range of operating points pertaining to system loading conditions. Numerical examples illustrate the improvement in solution accuracy for voltage magnitudes over the <i>Simplified DistFlow</i> model not only at nominal system load (\(k=1\)), but also at higher system loading (both positive and negative).</p>
+							</section>
+							<section>
+								<h4>Climate-Change-informed Load Forecasting</h4>
+								<p>Current power system planning practices traditionally rely on historical demand, wind and solar resource data, thereby implicitly assuming a stationary climate. As such, they do not account for long-term climate changes and their impacts on critical power system variables such as net system load (consumption minus generation from renewable energy sources), which can lead to significantly different power system demand and renewable energy generation projections. In this context, this work explores supervised machine learning (ML) models for generating climate-impacted hourly load projections for the year 2050. The load forecasts produced by the ML models (based on 2018-2019 New York Independent System Operator (NYISO) load data) reflect the impact of changing meteorological conditions on the load patterns of each of the NYISO's eleven zones.</p>
+								<p>This work is ongoing as part of the Machine Learning-based Dynamic Climate Projections for Power System Planning Datasets project and is funded by <a href="https://www.climatechange.ai/" target="_blank">Climate Change AI (CCAI)</a>.</p>
+							</section>
+						</div>
+					</div>
+					
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="copyright">
+							<li>&copy; 2022 Marija Markovic</li><li><a href="https://marija-markovic.github.io/">marija-markovic.github.io</a></li>
+							<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>		
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
