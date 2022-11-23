@@ -2334,7 +2334,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 30%;
+			max-width: 35%;
 			position: static;
 		}
 
@@ -3329,7 +3329,7 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 65em;
+		max-width: 60em;
 		margin: 0 auto;
 		padding: 0 1.5em;
 	}
